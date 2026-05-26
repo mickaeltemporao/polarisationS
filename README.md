@@ -5,8 +5,11 @@ mesurer différents types de polarisation en France
 - identifer les variables pertinentes 
 - Visualiser les données 
 
+filtre dataset France
+drop variable varaince zero
+
 (ALTair) seaborn 
 
 ## ALler plus loin :
-regarder ou la fance se situe ? 
+regarder ou la france se situe ? 
 dans le temps ? d'autres pays ? 
