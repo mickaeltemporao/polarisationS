@@ -21,6 +21,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from bs4 import BeautifulSoup
+import misc 
+
 
 df = pd.read_csv("data/raw/ESS11e04_1.csv")
 df_fr = df[df["cntry"] == "FR"]
@@ -156,3 +159,11 @@ wmn = wmn / 4
 
 immi.hist()
 wmn.hist()
+
+
+
+codebook = misc.parse_ess_codebook_html(
+    "data/raw/ESS11e04_1 codebook.html"
+)
+
+codebook[codebook["variable"] == "agea"]
